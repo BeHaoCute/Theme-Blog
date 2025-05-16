@@ -16,12 +16,13 @@
         </div>
 
         <nav class="main-nav">
-            <?php 
-                wp_nav_menu([
-                    'theme_location' => 'main-menu',
-                    'container' => false,
-                    'menu_class' => 'menu-list',
-                ]); 
+            <?php
+            wp_nav_menu([
+                'theme_location' => 'main-menu',
+                'container' => false,
+                'menu_class' => 'menu-list',
+                'fallback_cb' => 'custom_fallback_menu', // Sử dụng hàm tùy chỉnh
+            ]);
             ?>
         </nav>
 
@@ -31,3 +32,16 @@
         </div>
     </div>
 </header>
+
+<?php
+// Hàm fallback tùy chỉnh
+function custom_fallback_menu() {
+    $pages = wp_list_pages(array(
+        'title_li' => '',
+        'echo' => 0,
+    ));
+    if ($pages) {
+        echo '<ul class="menu-list">' . $pages . '</ul>';
+    }
+}
+?>
