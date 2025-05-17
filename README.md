@@ -1,4 +1,4 @@
-=== ThemeBlog ===
+=== ThemeBlog === 
 Contributors: Phạm Gia Hào, Phạm Phú Trọng
 Tags: blog, theme, wordpress, tối giản
 Requires at least: 5.0
