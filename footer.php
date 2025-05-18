@@ -8,7 +8,7 @@
             $instagram_url = get_theme_mod('instagram_url', '');
             $youtube_url = get_theme_mod('youtube_url', '');
 
-            // Hiển thị các liên kết nếu có URL
+            
             if ($facebook_url) {
                 echo '<a href="' . esc_url($facebook_url) . '" target="_blank" rel="noopener noreferrer">Facebook</a>';
             }
