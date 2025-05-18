@@ -2,13 +2,13 @@
 
 <main class="site-main">
     <div class="content-wrapper">
-        <!-- Banner -->
+       
         <section class="hero-section">
             <h1>Chào mừng đến với Blog của tôi</h1>
             <p>Hãy cùng nhau khám phá những gì tôi đã đăng tải nhé.</p>
         </section>
 
-        <!-- Ô tìm kiếm -->
+        
         <div class="search-form">
             <form role="search" method="get" class="search-form" id="custom-search-form" action="">
                 <label>
@@ -19,7 +19,7 @@
             </form>
         </div>
 
-        <!-- Danh sách bài viết mới nhất -->
+        
         <section class="latest-posts">
             <h2>Bài viết mới nhất</h2>
             <div class="search-results" id="search-results">
