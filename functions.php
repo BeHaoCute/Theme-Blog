@@ -1,23 +1,23 @@
 <?php
-// Load CSS
+
 add_action('wp_enqueue_scripts', 'LoadCSS');
 function LoadCSS() {
     wp_enqueue_style('main_css', get_stylesheet_uri(), [], time());
 }
 
-// Đăng ký menu
-add_action('after_setup_theme', 'register_my_menu');
-function register_my_menu() {
-    register_nav_menu('primary', __('Primary Menu'));
-}
 
-// Header
+// add_action('after_setup_theme', 'register_my_menu');
+// function register_my_menu() {
+//     register_nav_menu('primary', __('Primary Menu'));
+// }
+
+
 function theme_setup() {
     register_nav_menu('main-menu', 'Main Menu');
 }
 add_action('after_setup_theme', 'theme_setup');
 
-// Footer
+
 function register_my_menus() {
     register_nav_menus([
         'footer-menu' => __('Footer Menu')
@@ -25,7 +25,7 @@ function register_my_menus() {
 }
 add_action('init', 'register_my_menus');
 
-// Thêm tùy chọn mạng xã hội vào Customizer
+
 function theme_customizer_social_links($wp_customize) {
     $wp_customize->add_section('social_links_section', [
         'title' => __('Social Media Links', 'themeblog'),
