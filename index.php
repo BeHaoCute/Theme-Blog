@@ -35,7 +35,7 @@
             <?php endif; ?>
         </div>
 
-        <!-- Phân trang (nếu cần) -->
+        
         <div class="pagination">
             <?php
             the_posts_pagination([
