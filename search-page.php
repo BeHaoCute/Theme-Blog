@@ -6,7 +6,7 @@ get_header(); ?>
 
 <main class="site-main">
     <div class="content-wrapper">
-        <!-- Ô tìm kiếm -->
+        
         <div class="search-form">
             <form role="search" method="get" class="search-form" id="custom-search-form" action="">
                 <label>
@@ -17,7 +17,7 @@ get_header(); ?>
             </form>
         </div>
 
-        <!-- Danh sách kết quả tìm kiếm -->
+        
         <div class="search-results" id="search-results">
             <?php
             $recent_args = array(
